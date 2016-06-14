@@ -44,7 +44,7 @@
            final +='\n*/';
            console.log(final);
 
-           var fileName = pName.replace(new RegExp(' ', 'g'), '-');;//'Your-plugin-name';//$scope.pName.replace(' ','-');
+           var fileName = pName.replace(new RegExp(' ', 'g'), '-').toLowerCase();//'Your-plugin-name';//$scope.pName.replace(' ','-');
            var link = document.createElement('a');
 
            link.setAttribute('download', fileName+'.php');
