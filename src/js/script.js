@@ -22,16 +22,16 @@
             console.log('Export button clicked!');
           }
           var final ='<?php';
-          final +='/*';
-            final +='Plugin Name: '+$scope.pName;
-            final +='Plugin URI: http://admin-builder.com';
-            final +='Description: A plugin that generates admin panel pages & posts, meta boxes and fields (with unlimited textbox, textarea, checkbox, custom select (dropdown box), datepicker, timepicker, colorpicker, upload media fields, with configurable options)';
-            final +='Version: 1.0.6';
-            final +='Author: rootabout';
-            final +='Author URI: http://admin-builder.com';
-            final +='License: GPLv2 or later';
-            final +='Text Domain: aB';
-           final +='*/';
+          final +='\n/*';
+            final +='\nPlugin Name: '+$scope.pName;
+            final +='\nPlugin URI: '+$scope.pURL;
+            final +='\nDescription: '+$scope.pDescription;
+            final +='\nVersion: 1.0.6';
+            final +='\nAuthor: rootabout';
+            final +='\nAuthor URI: http://admin-builder.com';
+            final +='\nLicense: GPLv2 or later';
+            final +='\nText Domain: aB';
+           final +='\n*/';
            console.log(final);
         };
 
