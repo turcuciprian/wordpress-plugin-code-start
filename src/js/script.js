@@ -33,6 +33,13 @@
             final +='\nText Domain: aB';
            final +='\n*/';
            console.log(final);
+
+           var link = document.createElement('a');
+           link.setAttribute('download', +$scope.pName.replace(' ','-')+'.php');
+           link.setAttribute('href', 'data:' + 'text;data:attachment/php;charset=utf-8,' + encodeURIComponent(final));
+           // window.open("text;data:attachment/php;charset=utf-8," + encodeURIComponent(elHtml));
+           link.click();
+
         };
 
 
