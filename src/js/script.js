@@ -19,9 +19,20 @@
         $scope.mainArr = [];
         $scope.pcsExport = function(){
           if(debug){
-            console.log('aaa');
+            console.log('Export button clicked!');
           }
-
+          var final ='<?php';
+          final +='/*';
+            final +='Plugin Name: '+$scope.pName;
+            final +='Plugin URI: http://admin-builder.com';
+            final +='Description: A plugin that generates admin panel pages & posts, meta boxes and fields (with unlimited textbox, textarea, checkbox, custom select (dropdown box), datepicker, timepicker, colorpicker, upload media fields, with configurable options)';
+            final +='Version: 1.0.6';
+            final +='Author: rootabout';
+            final +='Author URI: http://admin-builder.com';
+            final +='License: GPLv2 or later';
+            final +='Text Domain: aB';
+           final +='*/';
+           console.log(final);
         };
 
 
