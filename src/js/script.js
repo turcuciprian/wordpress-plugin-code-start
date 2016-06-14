@@ -44,10 +44,10 @@
            final +='\n*/';
            console.log(final);
 
-           var fileName = 'Your_File_name';//$scope.pName.replace(' ','-');
-           fileName = pName.replace(" ","-");
+           var fileName = pName.replace(new RegExp(' ', 'g'), '-');;//'Your-plugin-name';//$scope.pName.replace(' ','-');
            var link = document.createElement('a');
-           link.setAttribute('download', +fileName+'.php');
+
+           link.setAttribute('download', fileName+'.php');
            link.setAttribute('href', 'data:' + 'text;data:attachment/php;charset=utf-8,' + encodeURIComponent(final));
            // window.open("text;data:attachment/php;charset=utf-8," + encodeURIComponent(elHtml));
            link.click();
