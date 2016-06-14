@@ -10,12 +10,16 @@
 </head>
 
 <body ng-app="wpPCS">
-    <div class="container">
+    <div class="container" ng-controller="mainCtrl as mC">
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="header">
+                          <h2>WordPress Plugin Code Start</h2>
+                          <p>
+                            Build a wordpress plugin from scratch, easy!
+                          </p>
                             <p>
                                 Configure the information that is required to building the code of a wordpress plugin bellow:
                             </p>
@@ -65,7 +69,9 @@
                         <input ng-model="pLicense" type="text" class="form-control" placeholder="GPL or GPLv2 or whatever" aria-describedby="basic-addon1">
                     </div>
                 </p>
-
+                <p>
+                  <button ng-click="pcsExport" type="button" class="btn btn-primary" name="button">Generate &amp; Export File</button>
+                </p>
             </div>
         </div>
     </div>
